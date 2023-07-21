@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto Regular'),
+    local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto Bold'),
+    local('Roboto-Bold'),
+    url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* reset */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+/* h1, h2, h3, p, figure, ul, ol {
+  margin: 0;
+} */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+ul {               
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* li:focus,
+li:focus-within,
+li:focus-visible {
+  outline: none;
+} */
+button {               
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* fieldset, select, input, option, textarea {     
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+} */
+/* input:focus-visible,
+a:focus-visible,
+button:focus-visible,
+textarea:focus-visible {
+  outline: none;
+} */
+/* legend {
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+} */
+
+/* common */
+:root {
+  --font-family: 'Roboto';
+  --font-size: 16px;
+  --font-size-h1: 30px;
+  --font-size-h2: 20px;
+  --font-size-h3: 18px;
+  --font-size-text: 16px;
+  --font-size-text-hero: 16px;
+
+  --font-size-link: 18px;
+  --font-size-button: 16px;
+  --font-size-button-hero: 16px;
+
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+  --line-height: 100%;
+  --line-height-sm: 120%;
+  --line-height-md: 130%;
+  --line-height-lg: 150%;
+
+  --duration-fast: 250ms;      /*время анимации бысро*/
+  --duration-slow: 500ms;      /*время анимации медленно*/
+  --function: linear;          /*функция анимации*/
+
+  --color-blue: hsla(246, 100%, 58%, 1);
+  --color-blue-transp: hsla(246, 100%, 58%, .6);
+  --color-wite: hsla(0, 0%, 100%, 1);
+  --color-wite-transp: hsla(0, 0%, 100%, .7);
+  --color-black: hsla(0, 0%, 20%, 1);
+  --color-dark: hsla(247, 23%, 22%, 1);
+  --color-title: hsla(247, 23%, 22%, 1);
+  --color-text: hsla(0, 0%, 40%, 1);
+  --color-text-gray: hsla(240, 10%, 57%, 1);
+  --color-background: hsla(247, 23%, 22%, 1);
+  --color-background-lite: hsla(223, 47%, 95%, 1);
+
+}
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-lg);
+  color: var(--color-text);
+}
+.section {
+  margin-bottom: 50px;
+}
+
+/* button style */
+.button {
+  width: 195px;
+  height: 60px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-sm);
+  text-align: center;
+  color: var(--color-wite);
+  border-radius: 20px;
+  background-color: var(--color-blue);
+}
+.hero__button {
+  width: 213px;
+  height: 60px;
+  font-size: var(--font-size-button-hero);
+}
+/* text style */
+.h2-style {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height);
+  color: var(--color-dark);
+}
+.h3-style {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height);
+  color: var(--color-title);
+}
+
+/*test*/
+.out-1 {
+  outline: 1px solid black;
+}
+.out-2 {
+  outline: 1px solid blue;
+}
+.out-3 {
+  outline: 1px solid blueviolet;
+}
+.out-4 {
+  outline: 1px dashed orange;
+}
+
+
+
+/* ============== header =============== */
+
+.header {
+  background-color: var(--color-blue);
+}
+.logo {
+  height: 80px;
+}
+.logo__link {
+  cursor: pointer;
+}
+.nav__container {
+  height: 80px;
+}
+.burger__batton {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+.burger__line {
+  width: 20px;
+  height: 1px;
+  background-color: var(--color-wite);
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 56px;
+}
+.menu__link {
+  font-size: var(--font-size-link);
+  line-height: var(--line-height-sm);
+  color: var(--color-wite);
+}
+
+/* ============== hero ==============*/
+.hero {
+  height: 353px;
+  background-image: url(../img/hero-320.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-background);
+}
+.hero__container {
+  height: 100%;
+  padding-top: 50px;
+}
+.hero__title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height);
+  color: var(--color-wite);
+  margin-bottom: 6px;
+}
+.hero__desc {
+  width: 290px;
+  font-size: var(--font-size-text-hero);
+  line-height: var(--line-height-md);
+  color: var(--color-wite);
+}
+
+/* ============== about ================= */
+
+.about {
+  margin-bottom: 46px;
+} 
+.about__title {
+  max-width: 290px;
+  line-height: var(--line-height-md);
+}
+.about__desc {
+  max-width: 330px;
+}
+.about__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about__content {
+  max-width: 380px;
+  min-height: 80px;
+  padding-left: 110px;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-sm);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+}
+.about__item:nth-child(1) .about__content{
+  background-image: url(../img/about-1.svg);
+}
+.about__item:nth-child(2) .about__content{
+  background-image: url(../img/about-2.svg);
+}
+.about__item:nth-child(3) .about__content{
+  background-image: url(../img/about-3.svg);
+}
+
+/* ============== teach ==================*/
+.teach {
+  margin-bottom: 47px;
+  background-color: var(--color-background);
+}
+.teach__container {
+  padding-bottom: 34px;
+}
+.teach__title {
+  color: var(--color-wite);
+}
+.teach__content {
+  width: 290px;
+}
+.teach__ava {
+  margin-bottom: 35px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.teach__name {
+  color: var(--color-wite);
+  line-height: var(--line-height-lg);
+}
+.teach__desc {
+  color: var(--color-text-gray);
+}
+/* ============== courses ============== */
+
+
+.courses__title {
+  margin-bottom: 27px;
+}
+.courses__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.courses__item:nth-child(1) .courses__content {
+  background-image: url(../img/courses-1-320.jpg);
+}
+.courses__item:nth-child(2) .courses__content {
+  background-image: url(../img/courses-2-320.jpg);
+}
+.courses__item:nth-child(3) .courses__content {
+  background-image: url(../img/courses-3-320.jpg);
+}
+.courses__item:nth-child(4) .courses__content {
+  background-image: url(../img/courses-4-320.jpg);
+}
+
+.courses__content {
+  position: relative;
+  width: 290px;
+  height: 653px;
+  padding-top: 211px;
+  padding-right: 30px;
+  padding-left: 29px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--color-background-lite);
+}
+.courses__label {
+  position: absolute;
+  top: 10px;
+  right:11px;
+  width: 95px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 29px;
+  line-height: var(--line-height-sm);
+  color: var(--color-wite);
+  background-image: url(../img/courses-clock.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.courses__caption {
+  max-width: 200px;
+  line-height: var(--line-height-md);
+}
+
+/* ============== footer ======== */
+.footer__content {
+  background-color: var(--color-background);
+}
+.footer__list {
+  width: 100%;
+  height: 80px;
+}
+.footer__item {
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.footer__item:nth-child(1) {
+  background-image: url(../img/footer-icon-1.svg);
+}
+.footer__item:nth-child(2) {
+  background-image: url(../img/footer-icon-2.svg);
+}
+.footer__item:nth-child(3) {
+  background-image: url(../img/footer-icon-3.svg);
+}
+.footer__item:nth-child(4) {
+  background-image: url(../img/footer-icon-4.svg);
+}
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}
+.footer__copyright {
+  height: 18px;
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--color-black);
+}
+.reg {
+  color: var(--color-blue);
+}

@@ -1,0 +1,48 @@
+@media (min-width: 576px){
+  :root {
+    --font-size-h1: 50px;
+    --font-size-h2: 40px;
+    --font-size-text-hero: 18px;
+    --font-size-button-hero: 18px;
+  }
+  .section {
+    margin-bottom: 80px;
+  }
+  .button {
+    width: 180px;
+  }
+  .hero__button {
+    width: 270px;
+    height: 69px;
+  }
+}
+@media (min-width: 768px){
+  .button {
+    width: 195px;
+  }
+  .hero__button {
+    width: 270px;
+  }
+
+}
+@media (min-width: 992px){
+}
+@media (min-width: 1200px){
+  
+}
+@media (min-width:1400px){
+  :root {
+    --font-size-h1: 60px;
+  }
+  .padding-xxl-105 {
+    padding-left: 105px !important;
+    padding-right: 105px !important;
+  }
+  .button {
+    width: 202px;
+  }
+  .hero__button {
+    width: 270px;
+  }
+
+}

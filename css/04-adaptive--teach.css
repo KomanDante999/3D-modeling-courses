@@ -1,0 +1,35 @@
+@media (min-width: 576px){
+  .teach {
+    margin-bottom: 74px;
+  }
+  .teach__container {
+    padding-bottom: 55px;
+  }
+  .teach__name {
+    line-height: var(--line-height-lg);
+  }
+  .teach__content {
+    width: 240px;
+  }
+}
+@media (min-width: 768px){
+  .teach__container {
+    padding-bottom: 34px;
+  }
+  .teach__content {
+    width: 330px;
+  }
+  
+}
+@media (min-width: 1200px){
+  .teach__content {
+    width: 255px;
+  }
+  .teach__container {
+    padding-bottom: 55px;
+  }
+  
+}
+@media (min-width:1400px){
+  
+}
